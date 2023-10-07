@@ -1,5 +1,3 @@
-@import url('Responsite.css');
-
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -10,7 +8,7 @@ body {
 /* Estilos para el encabezado */
 header {
     background-color: #ffffff;
-    color: #fff;
+    color: #000000;
     padding: 10px 0;
 }
 
@@ -63,6 +61,7 @@ h1 {
     left: 0;
     background-color: #ffffff;
     padding: 10px;
+    z-index: 1; /* Asegura que el submenú esté por encima de otros elementos */
 }
 
 .menu ul li:hover .submenu {
@@ -70,7 +69,7 @@ h1 {
 }
 
 .submenu li {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 /* Estilos para acciones del usuario */
@@ -80,68 +79,14 @@ h1 {
     margin-left: 20px;
     font-weight: bold;
 }
-/* Estilos para el video de fondo */
-#video-fondo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; /* Coloca el video detrás de otros elementos */
-}
 
-/* Estilos para el contenido en la parte superior del video */
-.contenido {
-    position: relative;
-    z-index: 1; /* Coloca el contenido sobre el video */
+   /* Estilos CSS para el título y la descripción */
+   .titulo {
     text-align: center;
-    padding: 100px;
-    color: #fff;
+    font-weight: bold;
 }
 
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Evita que aparezcan barras de desplazamiento por defecto */
+.descripcion {
+    text-align: center;
+    font-size: 17px;
 }
-
-/* Estilos para el banner */
-.banner {
-    position: left;
-    top: 0;
-    right: 0;
-    width: 150px; /* Ajusta el ancho de tu banner */
-    height: 100%; /* Ajusta el alto de tu banner (en este caso, ocupa toda la altura) */
-    background-color: #33333300; /* Color de fondo del banner */
-}
-
-.image-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-    width: 100%; /* Ajusta el ancho de las imágenes */
-    height: auto;
-    margin: 10px 0;
-    border: 2px solid #fff; /* Borde blanco alrededor de las imágenes */
-    border-radius: 5px; /* Esquinas redondeadas del borde */
-}
-
-
-
-
-
-
-
-
-
-
