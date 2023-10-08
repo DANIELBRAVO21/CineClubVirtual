@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-title {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.video {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Estilos para el logo */
+.logo img {
+    max-height: 60px;
+    margin-right: 20px;
+}
+
+/* Estilos para el nombre de la marca */
+h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Estilos para el menú */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Estilos para el submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    z-index: 1; /* Asegura que el submenú esté por encima de otros elementos */
+}
+
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 10px 0;
+}
+/* Estilos para acciones del usuario */
+.user-actions a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+   /* Estilos CSS para el título y la descripción */
+   .titulo {
+    text-align: center;
+    font-weight: bold;
+}
+
+.descripcion {
+    text-align: center;
+    font-size: 17px;
+}
