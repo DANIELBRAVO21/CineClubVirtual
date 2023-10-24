@@ -1,0 +1,50 @@
+ /* Estilos generales */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Contenido principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Columnas en el contenido principal */
+.column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Media queries para dispositivos de pantalla más pequeña */
+@media (min-width: 768px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Media queries para dispositivos de pantalla más grande */
+@media (min-width: 1200px) {
+    .column {
+        width: 33.33%;
+    }
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

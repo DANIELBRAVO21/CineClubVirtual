@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineClubVirtual.com</title>
+    <link rel="stylesheet" href="Stylos/Responside-temporal.css">
+    <link rel="stylesheet" href="Stylos/Stylos-Inicio.css">
+    <link rel="stylesheet" href="Stylos/Styles-peliculas.css">
+    <link rel="stylesheet" href="Stylos/Styles-videos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+           <img src="file:///C:/Users/FAMILIA%20BRAVO/Desktop/Carpeta%20temporal%20Jeremy%20Bravo/Proyecto%20Final/img/CINECLUBVIRTUAL-removebg-preview.png" alt="Logo de la marca">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Categorias-peliculas.html">Categorias Peliculas</a></li>
+                <li><a href="Categorias-Series.html">Categorias Series</a></li>
+                <li><a href="Acerca-de-Nosotros.html">Acerca D Nosotros</a></li>
+           </ul>            
+        </nav>
+        <a class="btn" href="Inicio-sesion.html"><button>Inicio Sesion</i></button></a>
+
+      <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+       <div id="mobile-menu" class="overlay">
+          <a onclick="closeNav()" href="" class="close">&times;</a>
+           <div class="overlay-content">
+              <a href="Index.html">Inicio</a>
+               <a href="Categorias-peliculas.html">Categorias Peliculas</a>
+               <a href="Categorias-Series.html">Categorias Series</a>
+              <a href="Acerca-de-Nosotros.html">Acerca D Nosotros</a>
+              <a href="Inicio-sesion.html">Inicio Sesion</a>
+           </div>
+       </div>
+
+    </header>
+    <br>
+    <div class="content">
+        <h1 class="pretty-title">Along with the Gods: The Two Worlds</h1>
+        <img src="https://static.wixstatic.com/media/ff4133_6b93533ca1db4d61aa39cb2bcadf5e5c~mv2.jpg/v1/fill/w_1000,h_642,al_c,q_85,usm_0.66_1.00_0.01/ff4133_6b93533ca1db4d61aa39cb2bcadf5e5c~mv2.jpg" alt="Imagen">
+    </div>
+
+    <div class="content">
+        <button id="toggle-video-button" class="show-video-button">Mostrar Video</button>
+        <div id="video-card" class="hidden">
+            <iframe width="560" height="315" src="https://cdn14.tokyvideo.com/videos/261/261328/mp4/bdb4314c1351598e6ade506e6ee75ded2fb36b71fd0d5029b6770ea70aadc632.mp4?nva=20231025195435&nvb=20231023195435&token=09f4146d1d20b81a6d6be" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <button id="back-button" class="back-button">Regresar</button>
+    </div>
+
+    <script src="Java/Java-videos-peliculas.js"></script>
+    <script type="text/javascript" src="Java/Java-temporal.js"></script>
+<br>
+    <footer>
+        <h3><span class="text-with-background">Contáctanos</span></h3>
+        <p><span class="text-with-background">Estamos aquí para ayudarte. ¡Contáctanos si tienes alguna pregunta!</span></p>
+        <ul>
+            <li>
+                <span class="center"><a href="https://www.facebook.com/miempresa">Facebook</a></span>,
+                <span class="center"><a href="https://www.twitter.com/miempresa">Twitter</a></span>,
+                <span class="center"><a href="https://www.instagram.com/miempresa">Instagram</a></span>
+            </li>
+        </ul>
+    
+        <p><span class="text-with-background">© 2023 CineClubVirtual. Todos los derechos reservados.</span></p>
+    </footer>
+</body>
+</html>

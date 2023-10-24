@@ -1,15 +1,31 @@
-.linea{
-    border-top: 5px solid #000000;
-    margin-bottom: 40px;
+body {
+    margin: 0;
+    padding: 0;
 }
-/* Estilos para las cartas */
-.card {
+
+.content {
+    background-color: #f2f2f2;
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+
+.card-row {
     display: flex;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en filas en pantallas pequeñas */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card {
+    width: 100%; /* Las tarjetas ocuparán el ancho completo en pantallas pequeñas */
+    max-width: 300px; /* Establece un ancho máximo para las tarjetas */
+    margin: 10px;
     padding: 10px;
-    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
 }
 
@@ -18,23 +34,20 @@
 }
 
 .card img {
-    width: 200px;
+    max-width: 100%;
     height: auto;
-    margin-right: 20px;
+    border-radius: 10px 10px 0 0;
 }
 
-.card-content {
-    flex: 1;
+.card h2 {
+    margin: 10px 0;
 }
 
-.card h3 {
-    font-size: 18px;
-    margin: 0;
+a {
+    text-decoration: none;
     color: #333;
 }
 
-.card p {
-    font-size: 14px;
-    margin: 10px 0;
-    color: #666;
+a:hover {
+    text-decoration: underline;
 }
