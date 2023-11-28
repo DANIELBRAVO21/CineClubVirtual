@@ -1,0 +1,24 @@
+/* Estilos para los botones de categorías */
+.categorias {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categorias button {
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #3090b6;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Para evitar que afecte otros elementos y mantenerlos en línea */
+}
+
+/* Cambio de color al pasar el mouse por encima */
+.categorias button:hover {
+  background-color: #aeb8be;
+}
+
+

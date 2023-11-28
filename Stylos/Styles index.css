@@ -1,0 +1,28 @@
+body {
+    background-image: url('https://i.ytimg.com/vi/cDNJhF1kdkA/maxresdefault.jpg'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77vh;
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    margin: 10px;
+}

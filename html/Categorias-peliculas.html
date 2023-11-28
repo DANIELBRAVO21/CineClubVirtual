@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineClubVirtual.com</title>
+    <link rel="stylesheet" href="../Stylos/Responside-temporal.css">
+    <link rel="stylesheet" href="../Stylos/Stylos-Inicio.css">
+    <link rel="stylesheet" href="../Stylos/Styles-Slide.css">
+    <link rel="stylesheet" href="../Stylos/Styles-buscador.css">
+    <link rel="stylesheet" href="../Stylos/Styles-Card.css">
+    <link rel="stylesheet" href="../Stylos/botom perfil.css"> 
+    <link rel="stylesheet" href="../Stylos/Botom categorias.css"> 
+    <link rel="stylesheet" href="../Stylos/Styles-Categorias.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+           <img src="file:///C:/Users/ps%20user/Desktop/trabajos%20de%20html/img/CINECLUBVIRTUAL-removebg-preview.png" alt="Logo de la marca" >
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Categorias-peliculas.html">Categorias Peliculas</a></li>
+                <li><a href="Categorias-Series.html">Categorias Series</a></li>
+                <li><a href="Acerca-de-Nosotros.html">Acerca D Nosotros</a></li>
+           </ul>            
+        </nav>
+        <div class="circle-container">
+            <div class="circle" id="circle" onclick="toggleSubmenu()">
+                <img src="https://i.pinimg.com/474x/b8/eb/5a/b8eb5a3e2b6a2192452c21022e6ed25a.jpg" alt="Avatar">
+                <div class="submenu" id="submenu">
+                    <a href="#">Perfil</a>
+                    <a href="Index.html" onclick="logout()">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+
+      <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+       <div id="mobile-menu" class="overlay">
+          <a onclick="closeNav()" href="" class="close">&times;</a>
+           <div class="overlay-content">
+             <a href="Inicio.html">Inicio</a>
+             <a href="Categorias-peliculas.html">Categorias Peliculas</a>
+             <a href="Categorias-Series.html">Categorias Series</a>
+             <a href="Acerca-de-Nosotros.html">Acerca D Nosotros</a>
+           </div>
+       </div>
+
+    </header>
+    <br>
+    <br>
+<br>
+
+    <div class="slider">
+      <div class="slide-track">
+          <div class="slide">
+              <img src="https://i.pinimg.com/originals/15/e1/8e/15e18e1aa97f2195e5e715268cce6dfe.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://i.pinimg.com/originals/d6/53/22/d65322f9e1a1c8d0c9f4fc5fe42c9348.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://dam.smashmexico.com.mx/wp-content/uploads/2019/12/Poster2.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://i.pinimg.com/originals/a7/b8/32/a7b8320e520b48a3106f50dee2766b6d.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://static.wikia.nocookie.net/batman/images/8/8e/TB_p%C3%B3ster_05.png/revision/latest?cb=20220126140435&path-prefix=es" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUo5ejaqkl1QxyUIzs9bphWbu5uNbnbv8LMDhTi0lmQS1Eg6C7qEkUhC1hhK_FrgSSbY0PeWtk-Kvy766erdvHjigG9ak-v0EQuH6QQ77q8iAFbSgT_Cke1hJhj4_JoZBOs_CQZ9v39v6garLoDuqeKX7iFILxFp3_rLRhcaDyQtZAHQNnTlvmPh8m/s2880/poster%20culpa%20mia.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://sm.ign.com/ign_es/screenshot/default/mortal-kombat-poster-oficial-1_patb.jpg" alt="">
+          </div>
+
+          <div class="slide">
+              <img src="https://i.pinimg.com/originals/15/e1/8e/15e18e1aa97f2195e5e715268cce6dfe.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://i.pinimg.com/originals/d6/53/22/d65322f9e1a1c8d0c9f4fc5fe42c9348.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://dam.smashmexico.com.mx/wp-content/uploads/2019/12/Poster2.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://i.pinimg.com/originals/a7/b8/32/a7b8320e520b48a3106f50dee2766b6d.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://static.wikia.nocookie.net/batman/images/8/8e/TB_p%C3%B3ster_05.png/revision/latest?cb=20220126140435&path-prefix=es" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUo5ejaqkl1QxyUIzs9bphWbu5uNbnbv8LMDhTi0lmQS1Eg6C7qEkUhC1hhK_FrgSSbY0PeWtk-Kvy766erdvHjigG9ak-v0EQuH6QQ77q8iAFbSgT_Cke1hJhj4_JoZBOs_CQZ9v39v6garLoDuqeKX7iFILxFp3_rLRhcaDyQtZAHQNnTlvmPh8m/s2880/poster%20culpa%20mia.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="https://sm.ign.com/ign_es/screenshot/default/mortal-kombat-poster-oficial-1_patb.jpg" alt="">
+          </div>
+      </div>
+  </div>
+    <div class="container">
+      <p class="text">PELICULAS</p>
+    </div>
+    <div class="categorias">
+        <button onclick="mostrarCategoria('Todas')">Todas</button>
+        <button onclick="mostrarCategoria('Accion')">Acción</button>
+        <button onclick="mostrarCategoria('Animadas')">Animadas</button>
+        <button onclick="mostrarCategoria('Anime')">Anime</button>
+        <button onclick="mostrarCategoria('Romanticas')">Romanticas</button>
+      </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Buscar una película">
+        <button id="search-button">Buscar</button>
+    </div>
+<div id="Todas" class="peliculas">
+    <div id="search-results">
+        <!-- Aquí se mostrarán los resultados de la búsqueda -->
+    </div>
+    <div class="card-row">
+        <div class="card">
+            <a href="html peliculas/html animadas/Pelicula Bolt.html">
+                <img src="https://www.ecartelera.com/carteles/2400/2458/001_m.jpg" alt="Imagen 1">
+                <h2>Bolt: Un perro fuera de serie</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html animadas/Pelicula Tarzan.html">
+                <img src="https://www.cineycine.com/archivos/2014/01/tarzan-poster.jpg" alt="Imagen 2">
+                <h2>Tarzán</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html accion/Pelicula Mortal kombat.html">
+                <img src="https://pics.filmaffinity.com/Mortal_Kombat-143448809-large.jpg" alt="Imagen 2">
+                <h2>Mortal Kombat</h2>
+            </a>
+        </div>
+    </div>
+
+<div class="card-row">
+    <div class="card">
+        <a href="html peliculas/html romanticas/Pelicula Culpa mia.html">
+            <img src="https://es.web.img2.acsta.net/pictures/23/04/12/10/34/2124686.jpg" alt="Imagen 2">
+            <h2>Culpa mía</h2>
+        </a>
+    </div>
+    <div class="card">
+        <a href="html peliculas/html accion/Pelicula Capitán América PV.html">
+            <img src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e6/El_Primer_Vengador_Poster_5.png/revision/latest?cb=20151224142624&path-prefix=es" alt="Imagen 1">
+            <h2>Capitán América: el primer vengador</h2>
+        </a>
+    </div>
+    <div class="card">
+        <a href="html peliculas/html anime/Pelicula Dragon Ball Z - Broly El Legendario Super Saiyajin.html">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSot2jBrbb-UD0zjvUjnKUIP1V3yq98bZvOSAxOhWGsLJjB0wpa" alt="Imagen 2">
+            <h2>Dragon Ball Z - Broly El Legendario Super Saiyajin</h2>
+        </a>
+    </div>
+    
+</div>
+<div class="card-row">
+    <div class="card">
+        <a href="html peliculas/html accion/Pelicula Nowhere.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BNmEyOWU2NjctMzY0Zi00NzBkLTg3YzAtNDI3MGE4ZTkyZTQ0XkEyXkFqcGdeQXVyMzQyMDgzOTU@._V1_FMjpg_UX1000_.jpg" alt="Imagen 2">
+            <h2>Nowhere</h2>
+        </a>
+    </div>
+    <div class="card">
+        <a href="html peliculas/html accion/Pelicula Along with the Gods.html">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScjeRCOv5-9JuVefe8-d3Cl8REuv8iyXlCR0ESNoq9pZ69QZaC" alt="Imagen 2">
+            <h2>Along with the Gods: The Two Worlds</h2>
+        </a>
+    </div>
+    <div class="card">
+        <a href="html peliculas/html anime/Pelicula Ponyo y el secreto de la sirenita.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTc3YmM3N2QtODZkMC00ZDE5LThjMTQtYTljN2Y1YTYwYWJkXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_FMjpg_UX1000_.jpg" alt="Imagen 1">
+            <h2>Ponyo y el secreto de la sirenita</h2>
+        </a>
+    </div>
+</div>
+<div class="card-row">
+    <div class="card">
+        <a href="html peliculas/html anime/Pelicula Jujutsu Kaisen 0.html">
+           <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/9/9b/Jujutsu_Kaisen_0_The_Movie_-_Promocional_3.jpg/revision/latest?cb=20211122202620&path-prefix=es" alt="Imagen 2">
+           <h2>Jujutsu Kaisen 0</h2>
+        </a>
+    </div>
+</div>
+</div>
+<!-- Clasificacion de peliculas -->
+<div id="Accion" class="peliculas" style="display: none;">
+    <div class="card-row">
+    <div class="card">
+        <a href="html peliculas/html accion/Pelicula Along with the Gods.html">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScjeRCOv5-9JuVefe8-d3Cl8REuv8iyXlCR0ESNoq9pZ69QZaC" alt="Imagen 2">
+            <h2>Along with the Gods: The Two Worlds</h2>
+        </a>
+    </div>
+    <div class="card">
+        <a href="html peliculas/html accion/Pelicula Capitán América PV.html">
+            <img src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/e6/El_Primer_Vengador_Poster_5.png/revision/latest?cb=20151224142624&path-prefix=es" alt="Imagen 1">
+            <h2>Capitán América: el primer vengador</h2>
+        </a>
+    </div>
+    <div class="card">
+        <a href="html peliculas/html accion/Pelicula Mortal kombat.html">
+            <img src="https://pics.filmaffinity.com/Mortal_Kombat-143448809-large.jpg" alt="Imagen 2">
+            <h2>Mortal Kombat</h2>
+        </a>
+    </div>
+    <div class="card">
+        <a href="html peliculas/html accion/Pelicula Nowhere.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BNmEyOWU2NjctMzY0Zi00NzBkLTg3YzAtNDI3MGE4ZTkyZTQ0XkEyXkFqcGdeQXVyMzQyMDgzOTU@._V1_FMjpg_UX1000_.jpg" alt="Imagen 2">
+            <h2>Nowhere</h2>
+        </a>
+    </div>
+</div>
+</div>
+
+<div id="Animadas" class="peliculas" style="display: none;">
+    <div class="card-row">
+        <div class="card">
+            <a href="html peliculas/html animadas/Pelicula Bolt.html">
+                <img src="https://www.ecartelera.com/carteles/2400/2458/001_m.jpg" alt="Imagen 1">
+                <h2>Bolt: Un perro fuera de serie</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html animadas/Pelicula Tarzan.html">
+                <img src="https://www.cineycine.com/archivos/2014/01/tarzan-poster.jpg" alt="Imagen 2">
+                <h2>Tarzán</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html animadas/Pelicula El lorax.html">
+                <img src="https://accionsocial.ucr.ac.cr/sites/default/files/cine/portadas_peliculas/2019-06/dr-seuss-the-lorax-53c4ef4dc08ac.jpg" alt="Imagen 1">
+                <h2>El Lórax: en busca de la trúfula perdida</h2>
+            </a>
+        </div>
+    </div>
+    <div class="card-row">
+        <div class="card">
+            <a href="html peliculas/html animadas/Pelicula Mario bros.html">
+                <img src="https://musicart.xboxlive.com/7/26fd6500-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" alt="Imagen 2">
+                <h2>Super Mario Bros. La película</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html animadas/Pelicula Intensamente.html">
+                <img src="https://www.elsotano.com/imagenes_grandes/9786070/978607072732.JPG" alt="Imagen 2">
+                <h2>Intensa-Mente</h2>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="Anime" class="peliculas" style="display: none;">
+    <div class="card-row">
+        <div class="card">
+            <a href="html peliculas/html anime/Pelicula Ponyo y el secreto de la sirenita.html">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTc3YmM3N2QtODZkMC00ZDE5LThjMTQtYTljN2Y1YTYwYWJkXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_FMjpg_UX1000_.jpg" alt="Imagen 1">
+                <h2>Ponyo y el secreto de la sirenita</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html anime/Pelicula Jujutsu Kaisen 0.html">
+                <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/9/9b/Jujutsu_Kaisen_0_The_Movie_-_Promocional_3.jpg/revision/latest?cb=20211122202620&path-prefix=es" alt="Imagen 2">
+                <h2>Jujutsu Kaisen 0</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html anime/Pelicula Demon Slayer El tren infinito.html">
+                <img src="https://somoskudasai.com/wp-content/uploads/2020/10/ElLNSepVgAAQ9_m-edit-min-1.jpg" alt="Imagen 2">
+                <h2>Demon Slayer: El tren infinito</h2>
+            </a>
+        </div>
+    </div>
+    <div class="card-row">
+        <div class="card">
+            <a href="html peliculas/html anime/Pelicula The Seven Deadly Sins-prisioneros del cielo.html">
+                <img src="https://play-lh.googleusercontent.com/proxy/M-CI23xvSP5fcsmloE5fzEN9ufCLfb2FBRhQ6BzXr1QeCG5y7gmOXNIZ1s0hywYrgMaITQxUHyG8SAF-kKIc71Rs78q6a7UK48sCri-GEuyeuMz0TREgPPTXIRc2zHqQ3K3nJZWS2wGtJHN0LWGotgbw8NgNokX-R0AXjQ" alt="Imagen 2">
+                <h2>The Seven Deadly Sins: prisioneros del cielo</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html anime/Pelicula Dragon Ball Z - Broly El Legendario Super Saiyajin.html">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSot2jBrbb-UD0zjvUjnKUIP1V3yq98bZvOSAxOhWGsLJjB0wpa" alt="Imagen 2">
+                <h2>Dragon Ball Z - Broly El Legendario Super Saiyajin</h2>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="Romanticas" class="peliculas" style="display: none;">
+    <div class="card-row">
+        <div class="card">
+            <a href="html peliculas/html romanticas/Pelicula Culpa mia.html">
+                <img src="https://es.web.img2.acsta.net/pictures/23/04/12/10/34/2124686.jpg" alt="Imagen 2">
+                <h2>Culpa mía</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html romanticas/Pelicula Your name.html">
+                <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/12/suzume-no-tojimari-2893720.jpg" alt="Imagen 2">
+                <h2>Your Name</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html romanticas/Pelicula Amor de gata.html">
+                <img src="https://pics.filmaffinity.com/Amor_de_gata-628042243-large.jpg" alt="Imagen 2">
+                <h2>Amor de gata</h2>
+            </a>
+        </div>
+    </div>
+    <div class="card-row">
+        <div class="card">
+            <a href="html peliculas/html romanticas/Pelicula Una chica del siglo XX.html">
+                <img src="https://pics.filmaffinity.com/Una_chica_del_siglo_XX-250665751-large.jpg" alt="Imagen 2">
+                <h2>Una chica del siglo XX</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html romanticas/Pelicula La dama y el vagabundo.html">
+                <img src="https://play-lh.googleusercontent.com/m2Y0hnxbzXkXxAAN9uZ6TF24m8spVrCQJVJM8gcDeUp0YaIZFYgLK69o2J_epgq2bKxkJw" alt="Imagen 2">
+                <h2>La dama y el vagabundo</h2>
+            </a>
+        </div>
+    </div>
+</div>
+<br>
+<footer>
+  <p><span class="text-with-background">© 2023 CineClubVirtual. Todos los derechos reservados.</span></p>
+</footer>
+<script type="text/javascript" src="../Java/Java-menu.js"></script>
+<script type="text/javascript" src="../Java/Categorias.js"></script>
+<script src="../Java/Buscador.js"></script>
+<script type="text/javascript" src="../Java/Java-temporal.js"></script>
+<script type="text/javascript" src="../Java/botom perfil.js"></script>
+<script type="text/javascript" src="../Java/botom-categorias.js"></script>
+</body>
+</html>

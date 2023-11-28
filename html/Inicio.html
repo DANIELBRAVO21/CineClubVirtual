@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineClubVirtual.com</title>
+    <link rel="stylesheet" href="../Stylos/Responside-temporal.css">
+    <link rel="stylesheet" href="../Stylos/Stylos-Inicio.css">
+    <link rel="stylesheet" href="../Stylos/botom perfil.css">
+    <link rel="stylesheet" href="../Stylos/Styles-Slide.css">
+    <link rel="stylesheet" href="../Stylos/Styles-Card.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+           <img src="../img/CINECLUBVIRTUAL-removebg-preview.png" alt="Logo de la marca">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Categorias-peliculas.html">Categorias Peliculas</a></li>
+                <li><a href="Categorias-Series.html">Categorias Series</a></li>
+                <li><a href="Acerca-de-Nosotros.html">Acerca D Nosotros</a></li>
+           </ul>            
+        </nav>
+        <div class="circle-container">
+            <div class="circle" id="circle" onclick="toggleSubmenu()">
+                <img src="https://i.pinimg.com/474x/b8/eb/5a/b8eb5a3e2b6a2192452c21022e6ed25a.jpg" alt="Avatar">
+                <div class="submenu" id="submenu">
+                    <a href="#">Perfil</a>
+                    <a href="Index.html" onclick="logout()">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+
+      <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+       <div id="mobile-menu" class="overlay">
+          <a onclick="closeNav()" href="" class="close">&times;</a>
+           <div class="overlay-content">
+             <a href="Inicio.html">Inicio</a>
+             <a href="Categorias-peliculas.html">Categorias Peliculas</a>
+             <a href="Categorias-Series.html">Categorias Series</a>
+             <a href="Acerca-de-Nosotros.html">Acerca D Nosotros</a>
+           </div>
+       </div>
+       <section>
+    </header>
+    <br>
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="https://depor.com/resizer/qXdG6Dg8rnB_Zs3Tol0bARG53BA=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/BFFOEQLSFFBBDN3RDXZBZEVGGA.jpg" alt="1">
+            </div>
+            <div class="slide">
+                <img src="https://mymodernmet.com/wp/wp-content/uploads/2020/02/parasite-film-tribute-1.jpg" alt="2">
+            </div>
+            <div class="slide">
+                <img src="https://moviepostermexico.com/cdn/shop/files/spiderman_across_the_spiderverse_ver2_xxlg_250x250@2x.jpg?v=1686681028" alt="3">
+            </div>
+            <div class="slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTIzNTgxOTY3MF5BMl5BanBnXkFtZTYwMjAzNTc3._V1_.jpg" alt="4">
+            </div>
+            <div class="slide">
+                <img src="https://img.unocero.com/2014/01/all-disney-movie-posters-45.jpg" alt="5">
+            </div>
+            <div class="slide">
+                <img src="https://www.ecartelera.com.mx/carteles/5200/5256/001_m.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/originals/33/5a/5d/335a5dbc3370872d82b2e4d769deea1e.jpg" alt="7">
+            </div>
+            <!--son las copias de arriba-->
+            <div class="slide">
+                <img src="https://depor.com/resizer/qXdG6Dg8rnB_Zs3Tol0bARG53BA=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/BFFOEQLSFFBBDN3RDXZBZEVGGA.jpg" alt="1">
+            </div>
+            <div class="slide">
+                <img src="https://mymodernmet.com/wp/wp-content/uploads/2020/02/parasite-film-tribute-1.jpg" alt="2">
+            </div>
+            <div class="slide">
+                <img src="https://moviepostermexico.com/cdn/shop/files/spiderman_across_the_spiderverse_ver2_xxlg_250x250@2x.jpg?v=1686681028" alt="3">
+            </div>
+            <div class="slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTIzNTgxOTY3MF5BMl5BanBnXkFtZTYwMjAzNTc3._V1_.jpg" alt="4">
+            </div>
+            <div class="slide">
+                <img src="https://img.unocero.com/2014/01/all-disney-movie-posters-45.jpg" alt="5">
+            </div>
+            <div class="slide">
+                <img src="https://www.ecartelera.com.mx/carteles/5200/5256/001_m.jpg" alt="6">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/originals/33/5a/5d/335a5dbc3370872d82b2e4d769deea1e.jpg" alt="7">
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <h2 class="recently-added-title">Agregados Recientemente</h2>
+    
+    <div class="card-row">
+        <div class="card">
+            <a href="html peliculas/html animadas/Pelicula El lorax.html">
+                <img src="https://accionsocial.ucr.ac.cr/sites/default/files/cine/portadas_peliculas/2019-06/dr-seuss-the-lorax-53c4ef4dc08ac.jpg" alt="Imagen 1">
+                <h2>El Lórax: en busca de la trúfula perdida</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html animadas/Pelicula Mario bros.html">
+                <img src="https://musicart.xboxlive.com/7/26fd6500-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" alt="Imagen 2">
+                <h2>Super Mario Bros. La película</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html anime/Pelicula The Seven Deadly Sins-prisioneros del cielo.html">
+                <img src="https://play-lh.googleusercontent.com/proxy/M-CI23xvSP5fcsmloE5fzEN9ufCLfb2FBRhQ6BzXr1QeCG5y7gmOXNIZ1s0hywYrgMaITQxUHyG8SAF-kKIc71Rs78q6a7UK48sCri-GEuyeuMz0TREgPPTXIRc2zHqQ3K3nJZWS2wGtJHN0LWGotgbw8NgNokX-R0AXjQ" alt="Imagen 2">
+                <h2>The Seven Deadly Sins: prisioneros del cielo</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html romanticas/Pelicula Your name.html">
+                <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/12/suzume-no-tojimari-2893720.jpg" alt="Imagen 2">
+                <h2>Your Name</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html romanticas/Pelicula Amor de gata.html">
+                <img src="https://pics.filmaffinity.com/Amor_de_gata-628042243-large.jpg" alt="Imagen 2">
+                <h2>Amor de gata</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html romanticas/Pelicula Una chica del siglo XX.html">
+                <img src="https://pics.filmaffinity.com/Una_chica_del_siglo_XX-250665751-large.jpg" alt="Imagen 2">
+                <h2>Una chica del siglo XX</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html anime/Pelicula Demon Slayer El tren infinito.html">
+                <img src="https://somoskudasai.com/wp-content/uploads/2020/10/ElLNSepVgAAQ9_m-edit-min-1.jpg" alt="Imagen 2">
+                <h2>Demon Slayer: El tren infinito</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html animadas/Pelicula Intensamente.html">
+                <img src="https://www.elsotano.com/imagenes_grandes/9786070/978607072732.JPG" alt="Imagen 2">
+                <h2>Intensa-Mente</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="html peliculas/html romanticas/Pelicula La dama y el vagabundo.html">
+                <img src="https://play-lh.googleusercontent.com/m2Y0hnxbzXkXxAAN9uZ6TF24m8spVrCQJVJM8gcDeUp0YaIZFYgLK69o2J_epgq2bKxkJw" alt="Imagen 2">
+                <h2>La dama y el vagabundo</h2>
+            </a>
+        </div>
+    </div>
+</div>    
+    <footer>
+        <p><span class="text-with-background">© 2023 CineClubVirtual. Todos los derechos reservados.</span></p>
+    </footer>
+
+    <script type="text/javascript" src="../Java/Java-temporal.js"></script>
+    <script type="text/javascript" src="../Java/botom perfil.js"></script>
+    <script type="text/javascript" src="../Java/botom-categorias.js"></script>
+    <script type="text/javascript" src="../Java/Java-menu.js"></script>
+    
+</body>
+</html>

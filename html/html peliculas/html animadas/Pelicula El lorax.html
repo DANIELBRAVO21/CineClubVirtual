@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineClubVirtual.com</title>
+    <link rel="stylesheet" href="../../../Stylos/Responside-temporal.css">
+    <link rel="stylesheet" href="../../../Stylos/Stylos-Inicio.css">
+    <link rel="stylesheet" href="../../../Stylos/Styles-Comentarios.css">
+    <link rel="stylesheet" href="../../../Stylos/Styles-Calificacion.css">
+    <link rel="stylesheet" href="../../../Stylos/botom perfil.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+           <img src="file:///C:/Users/ps%20user/Desktop/trabajos%20de%20html/img/CINECLUBVIRTUAL-removebg-preview.png" alt="Logo de la marca">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="../../Inicio.html">Inicio</a></li>
+                <li><a href="../../Categorias-peliculas.html">Categorias Peliculas</a></li>
+                <li><a href="../../Categorias-Series.html">Categorias Series</a></li>
+                <li><a href="../../Acerca-de-Nosotros.html">Acerca D Nosotros</a></li>
+           </ul>            
+        </nav>
+        <div class="circle-container">
+          <div class="circle" id="circle" onclick="toggleSubmenu()">
+              <img src="https://i.pinimg.com/474x/b8/eb/5a/b8eb5a3e2b6a2192452c21022e6ed25a.jpg" alt="Avatar">
+              <div class="submenu" id="submenu">
+                  <a href="#">Perfil</a>
+                  <a href="../../../Index.html" onclick="logout()">Cerrar sesión</a>
+              </div>
+          </div>
+      </div>
+
+      <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+       <div id="mobile-menu" class="overlay">
+          <a onclick="closeNav()" href="" class="close">&times;</a>
+           <div class="overlay-content">
+             <a href="../../Inicio.html">Inicio</a>
+             <a href="../../Categorias-peliculas.html">Categorias Peliculas</a>
+             <a href="../../Categorias-Series.html">Categorias Series</a>
+             <a href="../../Acerca-de-Nosotros.html">Acerca D Nosotros</a>
+           </div>
+       </div>
+
+    </header>
+    <div class="contenedor">
+      <br>
+        <h1 class="titulo">El Lórax: en busca de la trúfula perdida</h1>
+        <br>
+        <img src="https://play-lh.googleusercontent.com/aX3x22h6TlhFuzv-v3OpdOZ5j3tjPviaINk8bCHMXW0YvuMPKIhISzt06e3QqW2t9AKSWQ" alt="Descripción de la imagen">
+       <br>
+        <p>"El Lórax: En busca de la trúfula perdida" sigue la historia de Ted, un joven que sale de su ciudad artificial en busca de un árbol real para impresionar a Audrey, una chica por la que está interesado. En su viaje, se encuentra con el Lórax, defensor de la naturaleza, y descubre la historia del codicioso Once-ler, quien destruyó los árboles en el pasado. La película aborda temas de conservación ambiental y los efectos devastadores de la codicia en el medio ambiente.</p>
+        <video controls class="video">
+            <source src="file:///c%3A/Users/ps%20user/Desktop/trabajos%20de%20html/Pruebas/LORAX.%20EN%20BUSCA%20DE%20LA%20TR%C3%9AFULA%20PERDIDA%20-Trailer%20HD.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+    </div>
+    <br>
+          <div class="barra">
+            <button id="suscribirse">Suscribirse</button>
+            <div class="likes-dislikes">
+              <button class="like" onclick="likeDislike(this, 'archivo6')">Like (0)</button>
+              <button class="dislike" onclick="likeDislike(this, 'archivo6')">Dislike (0)</button>
+            </div>
+          </div>
+          <div class="comentarios">
+            <h2>Comentarios</h2>
+            <input type="text" id="nombre-usuario" placeholder="Nombre de usuario">
+            <textarea id="nuevo-comentario" placeholder="Escribe tu comentario aquí"></textarea>
+            <button onclick="agregarComentario('../html/html animadas/Pelicula El lorax.html')">Agregar Comentario</button>
+            <div id="comentarios-lista"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="../../../Java/Estructura calificacion.js"></script>
+    <script type="text/javascript" src="../../../Java/Comentarios.js"></script>
+    <script type="text/javascript" src="../../../Java/botom perfil.js"></script>
+    <script type="text/javascript" src="../../../Java/Java-menu.js"></script>
+<br>
+    <footer>
+        <h3><span class="text-with-background">Contáctanos</span></h3>
+        <p><span class="text-with-background">Estamos aquí para ayudarte. ¡Contáctanos si tienes alguna pregunta!</span></p>
+        <ul>
+            <li>
+                <span class="center"><a href="https://www.facebook.com/miempresa">Facebook</a></span>,
+                <span class="center"><a href="https://www.twitter.com/miempresa">Twitter</a></span>,
+                <span class="center"><a href="https://www.instagram.com/miempresa">Instagram</a></span>
+            </li>
+        </ul>
+    
+        <p><span class="text-with-background">© 2023 CineClubVirtual. Todos los derechos reservados.</span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineClubVirtual.com</title>
+    <link rel="stylesheet" href="../../../Stylos/Responside-temporal.css">
+    <link rel="stylesheet" href="../../../Stylos/Stylos-Inicio.css">
+    <link rel="stylesheet" href="../../../Stylos/Styles-Comentarios.css">
+    <link rel="stylesheet" href="../../../Stylos/Styles-Calificacion.css">
+    <link rel="stylesheet" href="../../../Stylos/botom perfil.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+           <img src="file:///C:/Users/ps%20user/Desktop/trabajos%20de%20html/img/CINECLUBVIRTUAL-removebg-preview.png" alt="Logo de la marca">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="../../Inicio.html">Inicio</a></li>
+                <li><a href="../../Categorias-peliculas.html">Categorias Peliculas</a></li>
+                <li><a href="../../Categorias-Series.html">Categorias Series</a></li>
+                <li><a href="../../Acerca-de-Nosotros.html">Acerca D Nosotros</a></li>
+           </ul>            
+        </nav>
+        <div class="circle-container">
+          <div class="circle" id="circle" onclick="toggleSubmenu()">
+              <img src="https://i.pinimg.com/474x/b8/eb/5a/b8eb5a3e2b6a2192452c21022e6ed25a.jpg" alt="Avatar">
+              <div class="submenu" id="submenu">
+                  <a href="#">Perfil</a>
+                  <a href="../../../Index.html" onclick="logout()">Cerrar sesión</a>
+              </div>
+          </div>
+      </div>
+
+      <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+       <div id="mobile-menu" class="overlay">
+          <a onclick="closeNav()" href="" class="close">&times;</a>
+           <div class="overlay-content">
+             <a href="../../Inicio.html">Inicio</a>
+             <a href="../../Categorias-peliculas.html">Categorias Peliculas</a>
+             <a href="../../Categorias-Series.html">Categorias Series</a>
+             <a href="../../Acerca-de-Nosotros.html">Acerca D Nosotros</a>
+           </div>
+       </div>
+
+    </header>
+    <br>
+    <div class="contenedor">
+        <h1 class="titulo">Bolt: Un perro fuera de serie</h1>
+        <img src="https://pics.filmaffinity.com/Bolt-216963051-large.jpg" alt="Descripción de la imagen">
+        <p>"Bolt" sigue la historia de un perro actor que cree tener superpoderes reales debido a su papel en una serie de televisión. Separado del set, Bolt se embarca en una aventura por carretera creyendo que debe salvar a su dueña. Acompañado por Mittens, un gato, y Rhino, un hámster, Bolt descubre su verdadera identidad y aprende sobre la amistad y el amor verdadero. La película trata temas de identidad, amistad y lealtad, con un toque de humor y emocionantes escenas de acción.</p>
+        <video controls class="video">
+            <source src="https://cdnst12.tokyvideo.com/videos/213/213942/mp4/528357e1365b2314d6d02ffea125ce25e1f0df127a6def5cf57ac82f15566ebf.mp4?secure=gPQbp5YmkN11ngUS2BYf3w%3D%3D%2C1700866390" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+    </div>
+          <div class="barra">
+            <button id="suscribirse">Suscribirse</button>
+            <div class="likes-dislikes">
+              <button class="like" onclick="likeDislike(this, 'archivo5')">Like (0)</button>
+              <button class="dislike" onclick="likeDislike(this, 'archivo5')">Dislike (0)</button>
+            </div>
+          </div>
+          <div class="comentarios">
+            <h2>Comentarios</h2>
+            <input type="text" id="nombre-usuario" placeholder="Nombre de usuario">
+            <textarea id="nuevo-comentario" placeholder="Escribe tu comentario aquí"></textarea>
+            <button onclick="agregarComentario('../html/html animadas/Pelicula Bolt.html')">Agregar Comentario</button>
+            <div id="comentarios-lista"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="../../../Java/Estructura calificacion.js"></script>
+    <script type="text/javascript" src="../../../Java/Comentarios.js"></script>
+    <script type="text/javascript" src="../../../Java/botom perfil.js"></script>
+    <script type="text/javascript" src="../../../Java/Java-menu.js"></script>
+<br>
+    <footer>
+        <h3><span class="text-with-background">Contáctanos</span></h3>
+        <p><span class="text-with-background">Estamos aquí para ayudarte. ¡Contáctanos si tienes alguna pregunta!</span></p>
+        <ul>
+            <li>
+                <span class="center"><a href="https://www.facebook.com/miempresa">Facebook</a></span>,
+                <span class="center"><a href="https://www.twitter.com/miempresa">Twitter</a></span>,
+                <span class="center"><a href="https://www.instagram.com/miempresa">Instagram</a></span>
+            </li>
+        </ul>
+    
+        <p><span class="text-with-background">© 2023 CineClubVirtual. Todos los derechos reservados.</span></p>
+    </footer>
+</body>
+</html>

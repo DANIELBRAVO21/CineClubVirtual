@@ -1,0 +1,12 @@
+.login-button {
+    background-color: #afafaf;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Esto hará que el botón sea ovalado */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #464646;
+}

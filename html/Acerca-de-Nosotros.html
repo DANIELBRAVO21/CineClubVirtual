@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CineClubVirtual.com</title>
+    <link rel="stylesheet" href="../Stylos/Responside-temporal.css">
+    <link rel="stylesheet" href="../Stylos/Stylos-Inicio.css">
+    <link rel="stylesheet" href="../Stylos/Styles-Slide.css">
+    <link rel="stylesheet" href="../Stylos/botom perfil.css"> 
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+           <img src="file:///C:/Users/ps%20user/Desktop/trabajos%20de%20html/img/CINECLUBVIRTUAL-removebg-preview.png" alt="Logo de la marca">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Categorias-peliculas.html">Categorias Peliculas</a></li>
+                <li><a href="Categorias-Series.html">Categorias Series</a></li>
+                <li><a href="Acerca-de-Nosotros.html">Acerca D Nosotros</a></li>
+           </ul>            
+        </nav>
+        <div class="circle-container">
+            <div class="circle" id="circle" onclick="toggleSubmenu()">
+                <img src="https://i.pinimg.com/474x/b8/eb/5a/b8eb5a3e2b6a2192452c21022e6ed25a.jpg" alt="Avatar">
+                <div class="submenu" id="submenu">
+                    <a href="#">Perfil</a>
+                    <a href="Index.html" onclick="logout()">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+
+      <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+       <div id="mobile-menu" class="overlay">
+          <a onclick="closeNav()" href="" class="close">&times;</a>
+           <div class="overlay-content">
+             <a href="Inicio.html">Inicio</a>
+             <a href="Categorias-peliculas.html">Categorias Peliculas</a>
+             <a href="Categorias-Series.html">Categorias Series</a>
+             <a href="Acerca-de-Nosotros.html">Acerca D Nosotros</a>
+           </div>
+       </div>
+
+    </header>
+
+    <div class="container">
+        <h1 class="title">¡Bienvenido a CineClubVirtual - Tu Destino Cinematográfico Sin Anuncios!</h1>
+        <br>
+        <h1 class="title">Acerca de Nosotros</h1>
+        <br>
+        <p class="description">En CineClubVirtual, estamos apasionados por el séptimo arte y las series de televisión. Nuestra historia comenzó con el deseo de crear un espacio en línea donde los amantes del cine y las series pudieran encontrar un refugio para explorar, disfrutar y compartir su pasión.</p>
+        <br>
+        <p class="description">Somos un equipo de cinéfilos y seriéfilos apasionados que creemos en la magia del cine y la televisión como formas poderosas de contar historias y conectar a las personas. Nuestra misión es proporcionar a nuestros visitantes acceso a una amplia gama de películas y series de alta calidad, desde los clásicos más icónicos hasta los éxitos de taquilla más recientes.</p>
+        <br>
+        <p class="description">En CineClubVirtual, creemos en la importancia de la comunidad cinematográfica y seriéfila. Por eso, además de ofrecer una biblioteca en constante crecimiento de contenido audiovisual, fomentamos la interacción y el diálogo entre nuestros miembros. Aquí, podrás unirte a emocionantes discusiones, compartir tus críticas y recomendaciones, y descubrir nuevos tesoros cinematográficos de la mano de otros apasionados.</p>
+        <br>
+        <p class="description">Nos esforzamos por brindar una experiencia excepcional a todos nuestros visitantes. Y lo mejor de todo, CineClubVirtual es completamente gratuito y sin publicidad intrusiva. Creemos que el cine y las series deben ser accesibles para todos, en cualquier momento y en cualquier lugar.</p>
+        <br>    
+    </div>
+    <br>
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+            <img src="https://uvn-brightspot.s3.amazonaws.com/assets/vixes/t/the-mandalorian-poster-disney.jpeg" alt="1">
+        </div>
+        <div class="slide">
+            <img src="https://www.findelahistoria.com/web/wp-content/uploads/2020/04/Stranger-things-series-tv-poster-netflix.jpg" alt="2">
+        </div>
+        <div class="slide">
+            <img src="https://cl.buscafs.com/www.tomatazos.com/public/uploads/images/170592/170592.jpg" alt="3">
+        </div>
+        <div class="slide">
+            <img src="https://pbs.twimg.com/media/FZE9zLHX0AAsBeA?format=jpg&name=4096x4096" alt="4">
+        </div>
+        <div class="slide">
+            <img src="https://static.wikia.nocookie.net/batman/images/8/8e/TB_p%C3%B3ster_05.png/revision/latest?cb=20220126140435&path-prefix=es" alt="5">
+        </div>
+        <div class="slide">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUo5ejaqkl1QxyUIzs9bphWbu5uNbnbv8LMDhTi0lmQS1Eg6C7qEkUhC1hhK_FrgSSbY0PeWtk-Kvy766erdvHjigG9ak-v0EQuH6QQ77q8iAFbSgT_Cke1hJhj4_JoZBOs_CQZ9v39v6garLoDuqeKX7iFILxFp3_rLRhcaDyQtZAHQNnTlvmPh8m/s2880/poster%20culpa%20mia.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://sm.ign.com/ign_es/screenshot/default/mortal-kombat-poster-oficial-1_patb.jpg" alt="7">
+        </div>
+        <!--son las copias de arriba-->
+        <div class="slide">
+            <img src="https://uvn-brightspot.s3.amazonaws.com/assets/vixes/t/the-mandalorian-poster-disney.jpeg" alt="1">
+        </div>
+        <div class="slide">
+            <img src="https://www.findelahistoria.com/web/wp-content/uploads/2020/04/Stranger-things-series-tv-poster-netflix.jpg" alt="2">
+        </div>
+        <div class="slide">
+            <img src="https://cl.buscafs.com/www.tomatazos.com/public/uploads/images/170592/170592.jpg" alt="3">
+        </div>
+        <div class="slide">
+            <img src="https://pbs.twimg.com/media/FZE9zLHX0AAsBeA?format=jpg&name=4096x4096" alt="4">
+        </div>
+        <div class="slide">
+            <img src="https://static.wikia.nocookie.net/batman/images/8/8e/TB_p%C3%B3ster_05.png/revision/latest?cb=20220126140435&path-prefix=es" alt="5">
+        </div>
+        <div class="slide">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUo5ejaqkl1QxyUIzs9bphWbu5uNbnbv8LMDhTi0lmQS1Eg6C7qEkUhC1hhK_FrgSSbY0PeWtk-Kvy766erdvHjigG9ak-v0EQuH6QQ77q8iAFbSgT_Cke1hJhj4_JoZBOs_CQZ9v39v6garLoDuqeKX7iFILxFp3_rLRhcaDyQtZAHQNnTlvmPh8m/s2880/poster%20culpa%20mia.jpg" alt="6">
+        </div>
+        <div class="slide">
+            <img src="https://sm.ign.com/ign_es/screenshot/default/mortal-kombat-poster-oficial-1_patb.jpg" alt="7">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <br>
+    <h1 class="title">Únete a nosotros en CineClubVirtual y descubre un mundo de entretenimiento cinematográfico y seriéfilo sin límites. ¡Bienvenido a nuestra comunidad!</h1>
+    <br>
+</div>
+<footer>
+  <p><span class="text-with-background">© 2023 CineClubVirtual. Todos los derechos reservados.</span></p>
+
+</footer>
+<script type="text/javascript" src="../Java/Java-temporal.js"></script>
+<script type="text/javascript" src="../Java/botom perfil.js"></script>
+<script type="text/javascript" src="../Java/Java-menu.js"></script>
+</body>
+</html>
